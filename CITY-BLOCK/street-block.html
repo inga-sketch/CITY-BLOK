@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Street Block | CSS</title>
+    <style>
+        body {
+            background-color: #223;
+            color: white;
+        }
+
+        .street {
+            border: 1px dotted red;
+        }
+
+        .house {
+            border: 1px dotted green;
+            width: 150px;
+            display: inline-block;
+            margin-right: 30px;
+            vertical-align: bottom;
+        }
+
+        .house-roof {
+            width: 0px;
+            height: 0px;
+            /*  background-color: brown;*/
+            /* triangle */
+            border: 75px solid #854747;
+            border-top-width: 0;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom-width: 90px;
+
+        }
+
+        .house-wall {
+            background-color: antiquewhite;
+            width: 150px;
+            height: 150px;
+        }
+
+        .house-window {
+            background-color: aquamarine;
+            border: 5px solid #854747;
+            width: 50px;
+            height: 50px;
+            transform: translateX(45px) translatey(45px);
+        }
+
+        .window-bottom-element {
+            border: 1px solid #636060;
+            height: 15px;
+        }
+
+        .window-frame {
+            border: 1px solid #636060;
+            height: 31.5px;
+        }
+
+        .frame-element {
+            border-top: 0;
+            border-left: 0;
+            border-right: 1px solid #636060;
+            border-bottom: 0;
+            height: 31.5px;
+            width: 23px;
+        }
+
+        .building-tall {
+            background-color: bisque;
+            height: 300px;
+            width: 100px;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+
+        .windows {
+            font-size: 50px;
+        }
+
+        .cloud {
+            display: inline-block;
+            vertical-align: bottom;
+        }
+
+        .tree {
+            font-size: 120px;
+            margin-top: 5px;
+            margin-left: -20px;
+            display: block;
+        }
+
+        .building-small {
+            border: 1px dotted #0d0ded;
+            width: 180px;
+            display: inline-block;
+            vertical-align: bottom;
+            margin-left: -20px;
+        }
+
+        .building-small-roof {
+            width: 0px;
+            height: 0px;
+            border: 90px solid #3a0202;
+            border-top-width: 0px;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom: 40px solid #3a0202;
+        }
+
+        .building-small-wall {
+            height: 80px;
+            width: 180px;
+            background-color: azure;
+        }
+
+        .building-small-window {
+            background-color: aquamarine;
+            border: 1px solid #854747;
+            width: 20px;
+            height: 50px;
+
+        }
+
+        #w-1 {
+            transform: translateX(20px) translatey(15px);
+            display: inline-block;
+        }
+
+        #w-2 {
+            transform: translateX(50px) translatey(15px);
+            display: inline-block;
+        }
+
+        #w-3 {
+            transform: translateX(90px) translatey(15px);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="street">
+        <div class="house">
+            <div class="house-roof"></div>
+            <div class="house-wall">
+                <div class="house-window">
+                    <div class="window-bottom-element"></div>
+                    <div class="window-frame">
+                        <div class="frame-element"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="building-tall">
+            <div class="windows">
+                ▮▮
+                <hr>▮▮
+                <hr>▮▮
+            </div>
+        </div>
+        <div class="cloud">
+            <img src="https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-12/72/cloud-icon.png"
+                alt="cloud">
+            <div class="tree">🌲</div>
+        </div>
+        <div class="building-small">
+            <div class="building-small-roof"></div>
+            <div class="building-small-wall">
+                <div id="w-1" class="building-small-window"></div>
+                <div id="w-2" class="building-small-window"></div>
+                <div id="w-3" class="building-small-window"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
